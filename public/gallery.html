@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="widht=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <title>Macrame by Papp Eva</title>
+  <!-- Bootstrap and Js -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="icon" href="./images/jewelry.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+   <!-- link from fontawesome.com-->
+   <script src="https://kit.fontawesome.com/40213c753e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Main navbar -->
+
+<section id="menu">
+    <div class="container-fluid">
+
+        <nav class="navbar  navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class= "nav-item">
+                    <a class="nav-link" href="./index.html#title">Acasa </a> 
+                    </li>
+                    <li class= "nav-item">
+                    <a class="nav-link" href="./gallery.html">Produse </a> 
+                    </li>
+                    <li class= "nav-item">
+                    <a class="nav-link" href="./aboutme.html">Despre mine </a> 
+                    </li>
+                    <li class= "nav-item">
+                    <a class="nav-link" href="./index.html#footer">Contact </a> 
+                    </li>
+            
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</section>
+
+<div class="gallery">
+    <div class="container">
+
+
+            <div class="gallery-filter">
+                <button type="button" class="btn btn btn-outline-dark filter-item active" data-filter="all">Toate produsele</button>
+                <button type="button" class="btn btn btn-outline-dark filter-item" data-filter="necklace">Coliere</button>
+                <button type="button" class="btn btn btn-outline-dark filter-item" data-filter="bracelet">Bratari</button>
+                <button type="button" class="btn btn btn-outline-dark filter-item" data-filter="earring">Cercei</button>
+                <button type="button" class="btn btn btn-outline-dark filter-item" data-filter="brooch">Brosa ~ Martisoare ~ Breloc</button>
+                <button type="button" class="btn btn btn-outline-dark filter-item" data-filter="other">Altele</button>
+
+            </div>
+        </section>
+
+        <!-- close button from full image -->
+        <div class="full-img" id="fullImgBox">
+            <img src="./images/macrame products/bracelet_blue.jpg" id="fullImg">
+            <span onclick="closeFullImg()"> X </span>
+         </div>
+
+        <!-- Gallary images -->
+       <section id="photos">
+            
+            <!--1st gallery item start -->
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_beige_blue.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_beige_blue_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+        
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_black.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+        
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_black_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+        
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_black_3.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+        
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_black_beige.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+        
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_black_beige_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+        
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_black_blue.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+        
+        
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_blue.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_blue_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_blue_3.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace bracelet earring" >
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_bracelet_earring_blue.jpg" alt="necklace bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_bracelet_earring_blue_2.jpg" alt="necklace bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+                
+                
+            <div class="gallery-item necklace bracelet earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_bracelet_earring_pink.jpg" alt="necklace bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_bracelet_green_brown_2.jpg" alt="necklace bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace brooch">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_brooch_white.jpg" alt="necklace brooch" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_beige.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_black.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_black_2.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_black_3.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_black_4.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_blue.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_blue_2.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+                
+                
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_blue_3.jpg" alt=" necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_blue_black.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_brown_1.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_green.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_green_2.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_green_3.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_green_beaje.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_grey.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_mauve.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_mauve_2.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+                
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_mauve_4.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_orange.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_pink.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_red_2.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_white.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_white_2.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_white_3.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_earring_white_4.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_earring_white_5.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_green.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+                
+                
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_green_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_green_3.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_green_4.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_green_5.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_green_brown.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_grey.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_mauve.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <!--40st gallery item start -->
+
+            <div class="gallery-item necklace earring">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_mauve_2.jpg" alt="necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_mauve_3.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_mauve_4.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+                
+                
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_mauve_5.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_orange.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_orange_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                <img src="./images/macrame products/necklace_pink.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_red.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>
+            
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_red_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_red_3.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_red_4.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_red_5.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_red_6.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div> 
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_white.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_white_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>    
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_white_3.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>    
+
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_white_black.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_white_brown.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_white_grey_1.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/necklace_white_grey_2.jpg" alt="necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item other bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_bracelet_black.jpg" alt="other bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_brecelet_brown.jpg" alt="other bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_brooch_trinket_march._red_black.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_brooch_trinket_march_brown.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_brooch_trinket_march_red_white_brown.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_brooch_trinket_march_white.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item other christmas decorations">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_christmas_decorations_white.jpg" alt="other christmas decorations" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item other christmas decorations">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_christmas_decorations_white_2.jpg" alt="other christmas decorations" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other christmas decorations">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_christmas_decorations_white_3.jpg" alt="other christmas decorations" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other christmas decorations">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_christmas_decorations_white_4.jpg" alt="other christmas decorations" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other christmas decorations">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_christmas_decorations_white_5.jpg" alt="other christmas decorations" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other curtain">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_curtain.jpg" alt="other curtain" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other flower pot holder">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_flower_pot_holder_1.jpg" alt="other flower pot holder" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other flower pot holder">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_flower_pot_holder_2.jpg" alt="other flower pot holder" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_green.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_green_2.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_green_3.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_green_pink.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_green_pink_2.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_red.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_red_2.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_red_3.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_white.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_white_2.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other handbag">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_handbag_white_3.jpg" alt="other handbag" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_necklace_black.jpg" alt="other necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other necklace earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_necklace_earring_black_yellow.jpg" alt="other necklace earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other trinket">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_trinket_white_pink.jpg" alt="other trinket" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item othe watch strap">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_watch_strap_blue.jpg" alt="othe watch strap" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item othe watch strap">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_watch_strap_blue_2.jpg" alt="othe watch strap" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item othe watch strap">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/other_watch_strap_blue_3.jpg" alt="othe watch strap" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_2.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_3.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_4.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_5.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_6.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_7.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_8.jpg" alt="bracelet" onclick="openFullImg(this.src)"> 
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_blue_9.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_brown.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_brown_2.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_beige.jpg" alt=" bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_blue.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_blue_2.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_blue_3.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_mauve.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_mauve_2.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_mauve_3.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_red.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_red_2.jpg" alt="bracelet earring" onclick="openFullImg(this.src)"> 
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_red_3.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_earring_red_5.jpg" alt="bracelet earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_2.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_3.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_4.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_5.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_6.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>    
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_7.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_8.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_red.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_red_2.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_white.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_mauve_white_2.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_necklace_red.jpg" alt="bracelet necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item bracelet necklace">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_necklace_red_2.jpg" alt="bracelet necklace" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_2.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_3.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+        
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_4.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_5.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+        
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_black.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+        
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_green_white.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_mauve_blue.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_red_white.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_white.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_white_3.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_white_4.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_white_5.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_white_mauve.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item bracelet">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/bracelet_white_mauve_2.jpg" alt="bracelet" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_beige_white_red.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_beige_white_red_2.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_beige_white_red_3.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_beige_white_red_4.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_black.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_black_2.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_black_red_orange_white.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_black_red_orange_white_2.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_blue.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_red.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_red_2.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item other brooch trinket march">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/brooch_trinket_march_red_black_2.jpg" alt="other brooch trinket march" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_black.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_black_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_black_green.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_black_green_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_3.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_4.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_5.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_6.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_7.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_8.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_9.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div> 
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_10.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div> 
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_white.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_white_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_blue_white_3.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_brown.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_green.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_green_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_green_3.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_green_4.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_green_black.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_green_red.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_green_white_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_mauve.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_mauve_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>   
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_mauve_3.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_mauve_4.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_mauve_5.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_mauve_6.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_orange.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_pink.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_3.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_4.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_5.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_6.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_7.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_white.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_red_yellow_black_green.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_2.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_3.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_4.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_5.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_6.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_black.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_green.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_white_grey.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+            <div class="gallery-item earring">
+                <div class="gallery-item-inner">
+                    <img src="./images/macrame products/earring_yellow_pink_red.jpg" alt="earring" onclick="openFullImg(this.src)">
+                </div>
+            </div>  
+
+
+        </section>
+        
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!--  add jQuery befor the javascript   --> 
+<script src="./index.js" charset="utf-8"> </script>
+
+</body>
+</html>
+    
