@@ -27,12 +27,13 @@ body {
     }
 
     .title_image {
-        padding-bottom: 3%;
+        padding-bottom: 2%;
         max-width: 70%;   
     }
 
     .intro{
         margin:2.5rem auto;
+        line-height: 200%;
     }
 
 
@@ -234,5 +235,8 @@ body {
         
     }
 
+.about-me-text{
+    padding:0 2%;
+}
 
 
