@@ -489,17 +489,17 @@ body {
             margin-bottom: 0%;
             } 
         #title span{ 
-            margin: 0 1%;
+            margin: 2% 5%;
             font-size: 1.5rem;
             display:inline-block;
             text-align: center;
         }
         .title_image{
-            width: 40%;
+            width: 45%;
             margin: auto;
         }
         .title_image_mobile{
-            max-width: 90%;
+            max-width: 60%;
             display: flex;
         }
 
@@ -508,7 +508,10 @@ body {
             min-height: 35vh;
             padding-top:0%;
         }
-        .products-image{ margin-left: 0%;}
+        .products-image{ 
+            margin-left: 0%;
+            margin-right:0%;
+        }
     } 
 
     @media (max-width: 290px)
