@@ -39,8 +39,8 @@ body {
         }
 
         .title_image_mobile{
-            padding: 5% 3%;
-            max-width: 60%; 
+            /* padding: 5% 3%; */
+            max-width: 80%; 
             display: none;
             margin:auto;
         }
